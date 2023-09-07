@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Game Title</title>
+    <style>
+        /* Inline CSS for simplicity. You can move this to an external stylesheet. */
+
+        /* Reset some default styles for consistency */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the game board */
+        .game-board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            width: 400px; /* Adjust the width as needed */
+            height: 320px; /* Adjust the height as needed */
+        }
+
+        /* Style for individual squares on the board */
+        .square {
+            width: 100%;
+            height: 100%;
+        }
+
+        .burgundy {
+            background-color: burgundy;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        /* Style for game pieces */
+        .game-pieces {
+            display: flex;
+            justify-content: space-around;
+            width: 200px; /* Adjust the width as needed */
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        .piece {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 24px;
+        }
+
+        .major {
+            background-color: yellow; /* Example background color for major pieces */
+        }
+
+        .minor {
+            background-color: green; /* Example background color for minor pieces */
+        }
+    </style>
+</head>
+<body>
+    <div class="game-board">
+        <!-- Create a 5x4 grid with alternating burgundy and white squares -->
+        <div class="row">
+            <div class="square burgundy"></div>
+            <div class="square white"></div>
+            <div class="square burgundy"></div>
+            <div class="square white"></div>
+            <div class="square burgundy"></div>
+        </div>
+        <div class="row">
+            <div class="square white"></div>
+            <div class="square burgundy"></div>
+            <div class="square white"></div>
+            <div class="square burgundy"></div>
+            <div class="square white"></div>
+        </div>
+        <!-- Repeat rows as needed -->
+    </div>
+    <div class="game-pieces">
+        <!-- Create major (o) and minor (x) pieces -->
+        <div class="piece major">o</div>
+        <div class="piece minor">x</div>
+        <!-- Repeat pieces as needed -->
+    </div>
+    <script>
+        // JavaScript code for game logic goes here
+        // For example, handling user interactions and game rules
+    </script>
+</body>
+</html>
